@@ -20,26 +20,26 @@ The following guides illustrate how to use some features concretely:
 **SOLID principles of OOP (Object Oriented Programming)**
 Robert Martin
 
-1. Single Responsibility;  a class should only have one responsibility. Furthermore, it should only have one reason to change. Classes should be small How does this principle help us to build better software?
+1. **S**ingle Responsibility;  a class should only have one responsibility. Furthermore, it should only have one reason to change. Classes should be small How does this principle help us to build better software?
    * **Testing** – A class with one responsibility will have far fewer test cases.
    * **Lower coupling** - Less functionality in a single class will have fewer dependencies.
    * **Organization** – Smaller, well-organized classes are easier to search than monolithic ones.
   
-2. Open/Closed; classes should be open for extension but closed for modification
+2. **O**pen/Closed; classes should be open for extension but closed for modification
    * classes should be open for extension
    * classes should be closed for modification
    * extend behaviour without modifying
    * use private variables with getter and setters 
    * use abstract classes
-3. Liskov Substitution; if class A is a subtype of class B, we should be able to replace B with A without disrupting the behavior of our program
+3. **L**iskov Substitution; if class A is a subtype of class B, we should be able to replace B with A without disrupting the behavior of our program
    * Babara Liskov, 1998
    * Objects in a program would be replaceable with instances of their subtypes without altering the correctness of the program
    * _een vierkant is een rechthoek maar een rechthoek is niet (altijd) een vierkant_
-4. Interface Segregation; larger interfaces should be split into smaller ones. By doing so, we can ensure that implementing classes only need to be concerned about the methods that are of interest to them
+4. **I**nterface Segregation; larger interfaces should be split into smaller ones. By doing so, we can ensure that implementing classes only need to be concerned about the methods that are of interest to them
    * make fine-grained interfaces
    * many client specific interfaces are better than one "general purpose" interface
    * less dependency between components
-5. Dependency Inversion; the principle of dependency inversion refers to the decoupling of software modules. This way, instead of high-level modules depending on low-level modules, both will depend on abstractions
+5. **D**ependency Inversion; the principle of dependency inversion refers to the decoupling of software modules. This way, instead of high-level modules depending on low-level modules, both will depend on abstractions
    * abstractions should not depend on details
    * details should not depend on abstractions
    * higher and lower level objects depend on de the same abstraction interaction
